@@ -1,28 +1,27 @@
 {
-  "name": "mongoose_skeleton",
+  "name": "workout-tracker",
   "version": "1.0.0",
-  "description": "App that enables user to track their workouts",
+  "description": "Workout Tracking App",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "watch": "nodemon server.js",
-    "seed": "node seeders/seed.js"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1",
-    "mongoose": "^5.9.2",
-    "morgan": "^1.9.1"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Mstarr85/Workout-Tracker.git"
   },
-  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/Mstarr85/Workout-Tracker/issues"
   },
-  "homepage": "https://github.com/Mstarr85/Workout-Tracker#readme"
+  "homepage": "https://github.com/Mstarr85/Workout-Tracker#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.2",
+    "morgan": "^1.9.1",
+    "node-seeder": "^1.1.2",
+    "path": "^0.12.7"
+  }
 }
