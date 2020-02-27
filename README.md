@@ -16,7 +16,7 @@ The user should be able to:
 
   * View multiple the combined weight of multiple exercises on the `stats` page.
 
-## Instructons
+## Instructions
 
   * Click on link to Deployed App 
 
