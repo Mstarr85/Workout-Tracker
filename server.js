@@ -2,9 +2,12 @@ const express = require("express")
 const logger = require("morgan")
 const mongoose = require("mongoose")
 
-const PORT = process.env.PORT || 3000
 
 const app = express()
+const PORT = process.env.PORT || 3000
+
+
+
 
 app.use(logger("dev"))
 
@@ -13,10 +16,11 @@ app.use(express.json())
 
 app.use(express.static("public"))
 
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/workout"
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb+srv://Mstarr:Flounder5@workout-tracker.7aafy.mongodb.net/workout"
 mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
-  useFindAndModify: false
+  useFindAndModify: false,
+  useUnifiedTopology: true
 });
 
 
